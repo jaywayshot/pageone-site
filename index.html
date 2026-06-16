@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PAGE ONE | 회사 홈페이지 제작 서비스</title>
+  <meta name="description" content="검증된 디자인 틀로 빠르고 합리적으로. 회사 홈페이지를 며칠 만에 제작해드립니다." />
+
+  <!-- Open Graph -->
+  <!-- TODO: 배포 도메인 확정 시 og:url / og:image 를 절대 URL로 교체 -->
+  <meta property="og:title" content="PAGE ONE | 회사 홈페이지 제작 서비스" />
+  <meta property="og:description" content="검증된 디자인 틀로 빠르고 합리적으로 — 당신의 첫 페이지를 페이지원이 만듭니다." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/egafe_furniture.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+
+  <!-- Pretendard -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@latest/dist/web/static/pretendard.css" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- 스크롤 진행 표시줄 -->
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top" aria-label="PAGE ONE 홈">PAGE ONE</a>
+
+    <nav class="nav" id="primary-nav" aria-label="주요 메뉴">
+      <a href="#why">WHY</a>
+      <a href="#products">PRODUCTS</a>
+      <a href="#partnership">PARTNERSHIP</a>
+      <a href="#process">PROCESS</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-label="메뉴 열기"
+      aria-expanded="false"
+      aria-controls="primary-nav"
+    >
+      <span class="nav-toggle__bar" aria-hidden="true"></span>
+      <span class="nav-toggle__bar" aria-hidden="true"></span>
+      <span class="nav-toggle__bar" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <!-- ===== SECTION 1 · HERO (영상 유지) ===== -->
+  <section class="hero" id="hero">
+    <video
+      class="hero__video"
+      src="assets/video/hero.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      aria-hidden="true"
+    ></video>
+
+    <!-- 오버레이 2겹 -->
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__gradient" aria-hidden="true"></div>
+    <!-- 우하단 워터마크 차단 레이어 -->
+    <div class="hero__corner-mask" aria-hidden="true"></div>
+
+    <!-- 카피 (좌하단 정렬) -->
+    <div class="hero__copy">
+      <h1 class="hero__title load-up" style="--delay: 0s">회사 홈페이지,<br />며칠이면 완성됩니다</h1>
+      <p class="hero__sub load-up" style="--delay: 0.15s">검증된 디자인 틀에 내용만 담아, 빠르고 합리적으로. 당신의 첫 페이지를 페이지원이 만듭니다.</p>
+      <a class="hero__cta load-up" href="#contact" style="--delay: 0.3s">제작 문의하기</a>
+    </div>
+
+    <!-- 스크롤 유도 -->
+    <a class="hero__scroll" href="#why" aria-label="아래로 스크롤">
+      <span class="hero__scroll-label">SCROLL</span>
+      <span class="hero__scroll-arrow" aria-hidden="true">↓</span>
+    </a>
+  </section>
+
+  <!-- ===== SECTION 2 · WHY ===== -->
+  <section class="section section--soft" id="why">
+    <div class="section__inner">
+      <p class="eyebrow reveal">WHY PAGE ONE</p>
+      <h2 class="section__headline reveal">What We Offer</h2>
+      <p class="section__sub reveal">이유 있는 선택</p>
+
+      <div class="cards">
+        <article class="card reveal">
+          <span class="card__num">01</span>
+          <h3 class="card__title">빠른 제작</h3>
+          <p class="card__desc">0에서 만들지 않습니다. 검증된 디자인 틀에 내용을 담아 며칠 만에 완성합니다.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__num">02</span>
+          <h3 class="card__title">검증된 디자인</h3>
+          <p class="card__desc">실제 운영 중인 사이트에서 출발한 틀. 디자인 고민 없이 신뢰감 있는 결과물.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__num">03</span>
+          <h3 class="card__title">합리적 가격</h3>
+          <p class="card__desc">0에서 만드는 외주보다 합리적인 비용. 같은 품질, 더 빠르게.</p>
+        </article>
+        </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION · STATS (검정 풀블리드) ===== -->
+  <section class="section section--dark stats" id="stats">
+    <div class="section__inner">
+      <dl class="stats__grid" id="stats-grid">
+        <div class="stat">
+          <dd class="stat__num" data-target="10" data-suffix="+">10+</dd>
+          <dt class="stat__label">제작 사례</dt>
+        </div>
+        <div class="stat">
+          <dd class="stat__num" data-target="3" data-suffix="일">3일</dd>
+          <dt class="stat__label">평균 제작 기간</dt>
+        </div>
+        <div class="stat">
+          <dd class="stat__num" data-target="100" data-suffix="%">100%</dd>
+          <dt class="stat__label">반응형 지원</dt>
+        </div>
+        <div class="stat">
+          <dd class="stat__num" data-target="24" data-suffix="h">24h</dd>
+          <dt class="stat__label">문의 응대</dt>
+        </div>
+        </dl>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3 · PRODUCTS ===== -->
+  <section class="section" id="products">
+    <div class="section__inner">
+      <p class="eyebrow reveal">PORTFOLIO</p>
+      <h2 class="section__headline reveal">Our Works</h2>
+      <p class="section__lead reveal">다양한 업종, 다양한 스타일. 모두 같은 시스템으로 빠르게 제작된 사이트입니다.</p>
+
+      
+      <div class="product-group reveal">
+        <div class="group-head">
+          <span class="group-head__idx">01</span>
+          <h3 class="group-head__title">LIVING &amp; RETAIL</h3>
+          <span class="group-head__sub">리빙 / 리테일</span>
+        </div>
+        <div class="products products--two">
+          
+          <a class="product" data-link="bm4m" href="https://www.bm4m.co.kr" target="_blank" rel="noopener">
+            <span class="product__thumb">
+              <img src="assets/img/egafe_furniture.jpg" alt="BM4M" loading="eager" fetchpriority="high" width="1200" height="799" />
+            </span>
+            <span class="product__name">BM4M</span>
+            <span class="product__desc">셀렉션·큐레이션 브랜드 사이트.</span>
+          </a>
+          
+          <a class="product" data-link="drium" href="#" target="_blank" rel="noopener">
+            <span class="product__thumb">
+              <img src="assets/img/speedrack.jpg" alt="드리움 DRIUM" loading="eager" width="1200" height="799" />
+            </span>
+            <span class="product__name">드리움 DRIUM</span>
+            <span class="product__desc">커튼·인테리어 브랜드.</span>
+          </a>
+          </div>
+      </div>
+      
+      <div class="product-group reveal">
+        <div class="group-head">
+          <span class="group-head__idx">02</span>
+          <h3 class="group-head__title">BEAUTY &amp; TECH</h3>
+          <span class="group-head__sub">뷰티 / 테크</span>
+        </div>
+        <div class="products">
+          
+          <a class="product" data-link="lumiere" href="https://lumiere-demo.bm4m00.workers.dev" target="_blank" rel="noopener">
+            <span class="product__thumb">
+              <img src="assets/img/subyeonggwa.jpg" alt="뤼미에르 LUMIÈRE" loading="eager" width="1200" height="799" />
+            </span>
+            <span class="product__name">뤼미에르 LUMIÈRE</span>
+            <span class="product__desc">AI 뷰티테크 브랜드.</span>
+          </a>
+          </div>
+      </div>
+      </div>
+  </section>
+
+  <!-- ===== SECTION 4 · PARTNERSHIP (검정 반전) ===== -->
+  <section class="section section--dark" id="partnership">
+    <div class="section__inner">
+      <p class="eyebrow reveal">PRICING</p>
+      <p class="statement reveal">필요한 만큼만.<br />합리적인 패키지로 시작하세요.</p>
+      <ul class="statement__list">
+        <li class="reveal">기본형 — 1페이지 회사 소개 사이트</li>
+        <li class="reveal">고급형 — 다중 섹션 + 맞춤 디자인</li>
+        <li class="reveal">맞춤형 — 요구사항에 따라 별도 견적</li>
+        </ul>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5 · PROCESS ===== -->
+  <section class="section" id="process">
+    <div class="section__inner">
+      <p class="eyebrow reveal">PROCESS</p>
+      <h2 class="section__headline reveal">How We Work</h2>
+      <p class="section__sub reveal">제작은 이렇게 진행됩니다</p>
+
+      <ol class="timeline">
+        <li class="step reveal">
+          <span class="step__num">01</span>
+          <h3 class="step__title">상담·견적</h3>
+          <p class="step__desc">원하는 스타일과 내용을 알려주시면 견적을 안내합니다.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__num">02</span>
+          <h3 class="step__title">디자인 선택</h3>
+          <p class="step__desc">여러 디자인 틀 중 원하는 스타일을 고릅니다.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__num">03</span>
+          <h3 class="step__title">내용 전달</h3>
+          <p class="step__desc">회사 정보·제품·이미지를 전달해주시면 채워드립니다.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__num">04</span>
+          <h3 class="step__title">완성·배포</h3>
+          <p class="step__desc">완성된 사이트를 인터넷에 올려 바로 운영할 수 있게 해드립니다.</p>
+        </li>
+        </ol>
+    </div>
+  </section>
+
+  <!-- ===== SECTION · FAQ ===== -->
+  <section class="section section--soft" id="faq">
+    <div class="section__inner section__inner--narrow">
+      <p class="eyebrow reveal">FAQ</p>
+      <h2 class="section__headline reveal">FAQ</h2>
+      <p class="section__sub reveal">자주 묻는 질문</p>
+
+      <div class="faq reveal">
+        <div class="faq__item">
+          <h3 class="faq__q">
+            <button type="button" class="faq__trigger" aria-expanded="false" aria-controls="faq-a1" id="faq-q1">
+              <span>제작 기간은 얼마나 걸리나요?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="faq__panel" id="faq-a1" role="region" aria-labelledby="faq-q1">
+            <p class="faq__a">내용 전달 후 보통 3~5일 내 완성됩니다. 분량에 따라 협의합니다.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <h3 class="faq__q">
+            <button type="button" class="faq__trigger" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">
+              <span>수정은 몇 번까지 되나요?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="faq__panel" id="faq-a2" role="region" aria-labelledby="faq-q2">
+            <p class="faq__a">기본 제작에 포함된 수정 범위가 있으며, 그 외는 별도 협의합니다.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <h3 class="faq__q">
+            <button type="button" class="faq__trigger" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">
+              <span>도메인·호스팅도 해주나요?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="faq__panel" id="faq-a3" role="region" aria-labelledby="faq-q3">
+            <p class="faq__a">네, 도메인 연결과 배포까지 도와드립니다. (호스팅 비용 별도 안내)</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <h3 class="faq__q">
+            <button type="button" class="faq__trigger" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">
+              <span>완성 후 직접 수정할 수 있나요?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="faq__panel" id="faq-a4" role="region" aria-labelledby="faq-q4">
+            <p class="faq__a">내용 수정 요청을 주시면 반영해드립니다. (셀프 편집 기능은 준비 중)</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <h3 class="faq__q">
+            <button type="button" class="faq__trigger" aria-expanded="false" aria-controls="faq-a5" id="faq-q5">
+              <span>어떤 업종이든 가능한가요?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="faq__panel" id="faq-a5" role="region" aria-labelledby="faq-q5">
+            <p class="faq__a">회사 소개형 사이트라면 업종 무관합니다.</p>
+          </div>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 6 · CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="section__inner">
+      <p class="eyebrow reveal">CONTACT</p>
+      <h2 class="section__headline reveal">Let&#39;s Build Your Page</h2>
+      <p class="section__sub reveal">당신의 첫 페이지, 지금 시작하세요.</p>
+
+      <div class="contact-box reveal">
+        <h3 class="contact-box__title">제작 문의</h3>
+        <dl class="contact-box__list">
+          <div>
+            <dt>이메일</dt>
+            <dd><a href="mailto:proposal@bm4m.co.kr">proposal@bm4m.co.kr</a></dd>
+          </div>
+          <div>
+            <dt>전화</dt>
+            <dd><a href="tel:01056387306">010-5638-7306</a></dd>
+          </div>
+          <div>
+            <dt>카카오톡</dt>
+            <dd>ayway</dd>
+          </div>
+        </dl>
+        <a class="btn btn--fill" href="mailto:proposal@bm4m.co.kr?subject=[PAGE ONE 홈페이지 제작 문의]">제작 문의하기</a>
+      </div>
+
+      <p class="contact-note reveal">
+        일반 / CS 문의 <a href="mailto:proposal@bm4m.co.kr">proposal@bm4m.co.kr</a>
+        &middot; 운영시간 평일 09:00–18:00
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 7 · FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <a class="wordmark footer__wordmark" href="#top" aria-label="PAGE ONE 홈">PAGE ONE</a>
+
+      <div class="footer__info">
+        <p>주식회사 비엠포엠 &nbsp;|&nbsp; 대표 이재균 &nbsp;|&nbsp; 사업자등록번호 555-87-02101</p>
+        <p>경기 안양시 동안구 엘에스로116번길 91, 금정역3차 SKV1센터 921·922·923호</p>
+        <p>
+          <a href="mailto:proposal@bm4m.co.kr">proposal@bm4m.co.kr</a>
+          &middot; <a href="tel:01056387306">010-5638-7306</a>
+        </p>
+      </div>
+
+      <nav class="footer__sns" aria-label="SNS">
+        <a href="https://instagram.com/egafe" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://blog.naver.com/bm4m00" target="_blank" rel="noopener">Blog</a>
+        <a href="https://open.kakao.com/" target="_blank" rel="noopener">KakaoTalk (ayway)</a>
+        </nav>
+
+      <p class="footer__copy">© 2026 PAGE ONE by BM4M. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- 맨 위로 버튼 -->
+  <button class="to-top" id="to-top" type="button" aria-label="맨 위로 이동">
+    <span aria-hidden="true">↑</span>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
